@@ -53,5 +53,29 @@ namespace DatabasesInWPF
 
             cn.Close();
         }
+
+        private void See_Employees_Click(object sender, RoutedEventArgs e)
+        {
+            string query = "select* from Employees";
+            OleDbCommand cmd = new OleDbCommand(query, cn);
+            cn.Open();
+            OleDbDataReader read = cmd.ExecuteReader();
+            string dataEmployeeID = "";
+            string dataEmployeeFirstName = "";
+            string dataEmployeeLastName = "";
+
+            while (read.Read())
+            {
+                dataEmployeeID += read[0].ToString() + "\n";
+                dataEmployeeFirstName += read[1].ToString() + "\n";
+                dataEmployeeLastName += read[2].ToString() + "\n";
+            }
+
+            Employee_ID1.Text = dataEmployeeID;
+            Employee_First_Name.Text = dataEmployeeFirstName;
+            Employee_Last_Name.Text = dataEmployeeLastName;
+
+            cn.Close();
+        }
     }
 }

@@ -13,10 +13,16 @@
 
         <Button x:Name="See_Assets" Content="See Assets" HorizontalAlignment="Left" Margin="97,48,0,0" VerticalAlignment="Top" Click="See_Assets_Click"/>
         <TextBlock x:Name="Asset_Data" HorizontalAlignment="Left" Height="107" Margin="127,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="44"/>
-        <TextBlock x:Name="Asset_Description" HorizontalAlignment="Left" Height="107" Margin="194,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="322"/>
+        <TextBlock x:Name="Asset_Description" HorizontalAlignment="Left" Height="107" Margin="194,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="206"/>
         <TextBlock HorizontalAlignment="Left" Height="14" Margin="33,85,0,0" TextWrapping="Wrap" Text="Employee ID" VerticalAlignment="Top" Width="86"/>
         <TextBlock x:Name="Employee_ID" HorizontalAlignment="Left" Height="102" Margin="33,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86"/>
-        <Button x:Name="See_Employees" Content="See Employees" HorizontalAlignment="Left" Height="20" Margin="400,48,0,0" VerticalAlignment="Top" Width="87"/>
+        <Button x:Name="See_Employees" Content="See Employees" HorizontalAlignment="Left" Height="20" Margin="485,48,0,0" VerticalAlignment="Top" Width="87" Click="See_Employees_Click"/>
+        <TextBlock HorizontalAlignment="Left" Height="16" Margin="436,85,0,0" TextWrapping="Wrap" Text="Employee ID" VerticalAlignment="Top" Width="68"/>
+        <TextBlock HorizontalAlignment="Left" Height="14" Margin="528,85,0,0" TextWrapping="Wrap" Text="First Name" VerticalAlignment="Top" Width="60"/>
+        <TextBlock HorizontalAlignment="Left" Height="18" Margin="610,85,0,0" TextWrapping="Wrap" Text="Last Name" VerticalAlignment="Top" Width="60" RenderTransformOrigin="0.55,0.613"/>
+        <TextBlock x:Name="Employee_ID1" HorizontalAlignment="Left" Height="107" Margin="436,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="68"/>
+        <TextBlock x:Name="Employee_First_Name" HorizontalAlignment="Left" Height="102" Margin="528,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60"/>
+        <TextBlock x:Name="Employee_Last_Name" HorizontalAlignment="Left" Height="107" Margin="610,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60"/>
 
     </Grid>
 </Window>
