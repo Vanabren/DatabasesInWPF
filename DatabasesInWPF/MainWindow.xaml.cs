@@ -21,15 +21,19 @@ namespace DatabasesInWPF
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
-    {
+    { 
+        // creates a connection variable for later use in connecting to a database
         OleDbConnection cn;
 
         public MainWindow()
         {
             InitializeComponent();
+
+            // creates a new connection to the Database1.accdb database
             cn = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\\Database1.accdb");
         }
 
+        // On button click, 
         private void See_Assets_Click(object sender, RoutedEventArgs e)
         {
             string query = "select* from Assets";
