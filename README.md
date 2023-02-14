@@ -5,7 +5,14 @@
 - To get data from the databases, we use SQL queries to interact with the database and loop through all data rows to populate certain text boxes with pertinent information.
 - In this assignment, one database with two tables - Assets and Employees - is accessed and read from. For the tables, I decided to write in Tom Holland and Andrew Garfield as the employees (and gave them random employee ids) and assigned them random assets based on which Spiderman movie they came from. The only reason I mention this is to clear my own potential future confusion when I look back at this assignment to refresh my memory on database useage.
 
-## Rough Procedure for Adding Data Sources ## 
+## How to Use ##
+- Open the .sln file includes in the repository within VS22 (or whatever version you have)
+- There's only one actual program included in the repository, so just clicking "Start" towards the top should run the proper executable.
+- To access the Assets table information from the included database, hit the "See Assets" button within the main window while the program is running.
+- To access the Employees table information from the included database, hit the "See Employees" button within the main window while the program is running.
+- Both buttons will populate three textboxes just under each button with appropriate information from the database. If the database is edited, these values should be different than normal.
+
+## Rough Procedure for Adding Data Sources (For Personal Use) ## 
 1. Create a .NET WPF Application.
 2. Select the "View" button from the top row in VS22 and hover over "Other Windows ->". In the new set of options that appears, select "Data Sources".
 3. Within the newly-opened "Data Sources" window, click the first button along its top row (should have a green plus arrow in the top left of the icon) to add a new data source.
